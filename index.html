@@ -13,14 +13,24 @@
     a:hover { color: #1c1b16; }
     #testimonial-track::-webkit-scrollbar { display: none; }
 
+    .menu-toggle { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; flex-direction: column; gap: 5px; background: none; border: 1px solid rgba(30,29,22,0.22); border-radius: 12px; cursor: pointer; padding: 0; }
+    .menu-toggle span { display: block; width: 20px; height: 2px; background: #1e1d16; border-radius: 2px; transition: transform 0.25s, opacity 0.2s; }
+    .menu-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .menu-open .menu-toggle span:nth-child(2) { opacity: 0; }
+    .menu-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     /* ===== Mobile & tablet ===== */
     @media (max-width: 860px) {
-      .site-header { padding: 14px 16px !important; gap: 12px !important; justify-content: center !important; }
+      html, body { overflow-x: hidden; overflow-x: clip; }
+      .site-header { padding: 14px 18px !important; gap: 0 !important; justify-content: space-between !important; flex-wrap: wrap !important; }
       .brand-name { font-size: 22px !important; }
-      .site-nav { width: 100% !important; justify-content: space-between !important; gap: 0 !important; padding: 6px !important; box-sizing: border-box; }
+      .menu-toggle { display: flex !important; }
+      .site-nav { display: none !important; width: 100% !important; flex-direction: column !important; align-items: stretch !important; gap: 0 !important; padding: 6px !important; margin-top: 14px; box-sizing: border-box; background: rgba(255,255,255,0.18) !important; }
+      .site-header.menu-open .site-nav { display: flex !important; animation: navIn 0.25s ease; }
       .site-nav > span { display: none !important; }
-      .site-nav a { flex: 1 1 0; flex-direction: column !important; justify-content: center; gap: 4px !important; padding: 6px 2px !important; font-size: 10px !important; letter-spacing: 0.04em !important; white-space: nowrap; text-align: center; }
-      section[id] { scroll-margin-top: 130px; }
+      .site-nav a { padding: 14px 12px !important; font-size: 13px !important; gap: 12px !important; border-bottom: 1px solid rgba(30,29,22,0.12); }
+      .site-nav a:last-child { border-bottom: none; }
+      @keyframes navIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+      section[id] { scroll-margin-top: 80px; }
       .site-footer { padding: 40px 20px 24px !important; }
       .site-footer nav { gap: 14px 22px !important; }
     }
@@ -62,7 +72,8 @@
 <div style="position:sticky;top:0;z-index:50;background:#b9b8a6;font-family:'Inter',sans-serif">
   <div class="site-header" style="width:100%;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:22px 56px;border-bottom:1px solid rgba(30,29,22,0.18)">
     <a href="#" style="display:flex;color:inherit;text-decoration:none"><span style="display:flex;align-items:center;gap:14px"><img src="images/logo-mark-dark.png" alt="" style="height:30px;width:auto;display:block"><span style="display:flex;flex-direction:column;gap:4px;line-height:1"><span class="brand-name" style="font-family:'Playfair Display',serif;font-size:28px;color:#1e1d16;letter-spacing:0.3px;white-space:nowrap">Sanja Milanović</span><span style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.38em;color:#5b5947;text-transform:uppercase">Fitness</span></span></span></a>
-    <nav class="site-nav" style="display:flex;gap:14px;align-items:center;border:1px solid rgba(30,29,22,0.22);border-radius:14px;padding:8px 10px;background:rgba(255,255,255,0.12)">
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav" style="display:flex;gap:14px;align-items:center;border:1px solid rgba(30,29,22,0.22);border-radius:14px;padding:8px 10px;background:rgba(255,255,255,0.12)">
       <a href="#about" style="display:flex;flex-direction:row;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 12px;border-radius:10px;text-decoration:none" data-hover="text-decoration:underline;text-underline-offset:4px">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg>
         About me
@@ -218,7 +229,6 @@
     </div>
   </div>
   </div>
-</div>
 </section>
 
 <section id="zakazi" style="background:#b9b8a6;padding:100px 56px;font-family:'Inter',sans-serif">
@@ -514,6 +524,17 @@ document.querySelectorAll('[data-hover]').forEach(function(el) {
       }, 750);
     }
 })();
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var header = document.querySelector('.site-header');
+  var btn = header && header.querySelector('.menu-toggle');
+  if (!btn) return;
+  var setOpen = function (o) { header.classList.toggle('menu-open', o); btn.setAttribute('aria-expanded', o ? 'true' : 'false'); btn.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); };
+  btn.addEventListener('click', function () { setOpen(!header.classList.contains('menu-open')); });
+  header.querySelectorAll('.site-nav a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+  document.addEventListener('click', function (e) { if (!header.contains(e.target)) setOpen(false); });
 });
 </script>
 </body>
