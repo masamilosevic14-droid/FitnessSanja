@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services · Sanja Milanović Fitness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; overflow-x: hidden; }
+    a { color: #3f3d33; text-decoration: none; }
+    a:hover { color: #1c1b16; }
+  </style>
+  <script src="./image-slot.js"></script>
+  <link rel="icon" href="images/logo-mark-dark.png">
+</head>
+<body>
+<div id="intro-overlay" style="position:fixed;inset:0;z-index:9999;background:#f4f2ec;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:28px;opacity:1;transition:opacity 0.9s ease">
+  <img src="images/logo-mark-dark.png" alt="Sanja Milanović Fitness" style="height:44px;width:auto;display:block">
+  <span style="font-family:'Playfair Display',serif;font-style:italic;font-size:42px;color:#1e1d16;letter-spacing:0.02em">Ready?</span>
+</div>
+<div id="page-content" style="width:100%;box-sizing:border-box;width:100%;background:#f4f2ec;font-family:'Inter',sans-serif;overflow:hidden;opacity:0;transition:opacity 0.9s ease">
+
+  <div style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:22px 56px;border-bottom:1px solid rgba(30,29,22,0.12);background:#b9b8a6">
+    <a href="index.html" style="display:flex;color:inherit;text-decoration:none"><span style="display:flex;align-items:center;gap:14px"><img src="images/logo-mark-dark.png" alt="" style="height:30px;width:auto;display:block"><span style="display:flex;flex-direction:column;gap:4px;line-height:1"><span style="font-family:'Playfair Display',serif;font-size:28px;color:#1e1d16;letter-spacing:0.3px;white-space:nowrap">Sanja Milanović</span><span style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.38em;color:#5b5947;text-transform:uppercase">Fitness</span></span></span></a>
+    <nav style="display:flex;gap:14px;align-items:center;border:1px solid rgba(30,29,22,0.22);border-radius:14px;padding:8px 10px;background:rgba(255,255,255,0.12)">
+      <a href="index.html#about" style="display:flex;flex-direction:row;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 12px;border-radius:10px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        About me
+      </a>
+      <span style="width:1px;height:16px;background:rgba(30,29,22,0.22)"></span>
+      <a href="services.html" style="display:flex;flex-direction:row;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 12px;border-radius:10px;color:#1e1d16">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        Services
+      </a>
+      <span style="width:1px;height:16px;background:rgba(30,29,22,0.22)"></span>
+      <a href="index.html#faq" style="display:flex;flex-direction:row;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 12px;border-radius:10px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.7 2.2c-.7.4-1.2 1-1.2 1.9"/><circle cx="12" cy="16.6" r="0.3" fill="currentColor" stroke="none"/></svg>
+        Questions
+      </a>
+      <span style="width:1px;height:16px;background:rgba(30,29,22,0.22)"></span>
+      <a href="index.html#zakazi" style="display:flex;flex-direction:row;align-items:center;gap:7px;font-size:11px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:6px 12px;border-radius:10px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 2v4M16 2v4M3 9h18"/><rect x="3" y="4" width="18" height="18" rx="2"/></svg>
+        Book
+      </a>
+    </nav>
+  </div>
+
+  <div style="position:relative;padding:80px 24px 100px;overflow:hidden">
+
+    <div style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:40px">
+      <div data-reveal="1" style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;max-width:1100px;opacity:0;transform:translateY(30px);transition:opacity 0.9s ease,transform 0.9s ease">
+        <a href="#detail-1" style="position:relative;width:280px;height:360px;border-radius:24px;overflow:hidden;box-shadow:0 20px 40px rgba(30,29,22,0.15);display:block;transition:transform 0.2s,box-shadow 0.2s" data-hover="transform:translateY(-6px);box-shadow:0 28px 50px rgba(30,29,22,0.3)">
+          <image-slot id="svc-photo-1" shape="rect" src="images/personal-training.jpg" placeholder="Drop a personal training photo" style="width:100%;box-sizing:border-box;height:100%;transition:transform 1.2s ease" data-hover="transform:scale(1.08)"></image-slot>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,19,15,0) 55%,rgba(20,19,15,0.55) 100%);pointer-events:none"></div>
+          <div style="position:absolute;left:20px;bottom:18px;color:#f4f2ec;font-size:15px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Personal Training</div>
+        </a>
+        <a href="#detail-4" style="position:relative;width:280px;height:360px;border-radius:24px;overflow:hidden;box-shadow:0 20px 40px rgba(30,29,22,0.15);margin-top:-24px;display:block;transition:transform 0.2s,box-shadow 0.2s" data-hover="transform:translateY(-6px);box-shadow:0 28px 50px rgba(30,29,22,0.3)">
+          <image-slot id="svc-photo-3" shape="rect" src="images/prenatal-fitness.jpg" placeholder="Drop a pre/post natal fitness photo" style="width:100%;box-sizing:border-box;height:100%;transition:transform 1.2s ease" data-hover="transform:scale(1.08)"></image-slot>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,19,15,0) 55%,rgba(20,19,15,0.55) 100%);pointer-events:none"></div>
+          <div style="position:absolute;left:20px;bottom:18px;color:#f4f2ec;font-size:15px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">Pre &amp; Post Natal Fitness</div>
+        </a>
+        <a href="#detail-3" style="position:relative;width:280px;height:360px;border-radius:24px;overflow:hidden;box-shadow:0 20px 40px rgba(30,29,22,0.15);display:block;transition:transform 0.2s,box-shadow 0.2s" data-hover="transform:translateY(-6px);box-shadow:0 28px 50px rgba(30,29,22,0.3)">
+          <image-slot id="svc-photo-2" shape="rect" src="images/group-training.jpg" placeholder="Drop a group training photo" style="width:100%;box-sizing:border-box;height:100%;transition:transform 1.2s ease" data-hover="transform:scale(1.08)"></image-slot>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,19,15,0) 55%,rgba(20,19,15,0.55) 100%);pointer-events:none"></div>
+          <div style="position:absolute;left:20px;bottom:18px;color:#f4f2ec;font-size:15px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase">BODYPUMP Group Training</div>
+        </a>
+      </div>
+      <a href="#list" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid #1e1d16;color:#1e1d16;font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;padding:14px 30px;border-radius:28px;background:#f4f2ec;transition:background 0.2s,color 0.2s" data-hover="background:#1e1d16;color:#f4f2ec">Explore</a>
+    </div>
+  </div>
+
+  <div style="position:relative;background:#2a2a28;padding:110px 24px">
+    <img src="images/logo-mark-light.png" alt="" style="position:absolute;top:36px;left:50%;transform:translateX(-50%);height:22px;width:auto;display:block;opacity:0.6">
+    <div data-reveal="1" style="display:flex;flex-direction:column;align-items:center;gap:36px;opacity:0;transform:translateY(24px);transition:opacity 0.9s ease,transform 0.9s ease">
+      <div id="motto" style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;column-gap:24px;row-gap:10px;font-family:'Playfair Display',serif;font-size:clamp(22px,2.6vw,34px);color:#f4f2ec;letter-spacing:0.04em;line-height:1.2">
+        <span data-word="1" style="opacity:0;transform:translateY(14px);transition:opacity 0.8s ease 0.00s,transform 0.8s ease 0.00s">Discipline</span>
+        <span data-word="1" style="font-size:0.5em;color:#c9c7ba;opacity:0;transform:translateY(14px);transition:opacity 0.8s ease 0.25s,transform 0.8s ease 0.25s">·</span>
+        <span data-word="1" style="opacity:0;transform:translateY(14px);transition:opacity 0.8s ease 0.50s,transform 0.8s ease 0.50s">Consistency</span>
+        <span data-word="1" style="font-size:0.5em;color:#c9c7ba;opacity:0;transform:translateY(14px);transition:opacity 0.8s ease 0.75s,transform 0.8s ease 0.75s">·</span>
+        <span data-word="1" style="opacity:0;transform:translateY(14px);transition:opacity 0.8s ease 1.00s,transform 0.8s ease 1.00s">Momentum</span>
+        <span data-word="1" style="font-size:0.5em;color:#c9c7ba;opacity:0;transform:translateY(14px);transition:opacity 0.8s ease 1.25s,transform 0.8s ease 1.25s">·</span>
+        <span data-word="1" style="opacity:0;transform:translateY(14px);transition:opacity 0.8s ease 1.50s,transform 0.8s ease 1.50s">Patience</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="list" style="max-width:1100px;margin:0 auto;padding:100px 56px 110px;display:flex;flex-direction:column;gap:56px">
+
+    <div id="detail-1" data-reveal="1" style="scroll-margin-top:110px;display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:40px;align-items:stretch;background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 12px rgba(30,29,22,0.06);transition:box-shadow 0.2s,opacity 0.8s ease,transform 0.8s ease;opacity:0;transform:translateY(24px)" data-hover="box-shadow:0 12px 32px rgba(30,29,22,0.18)">
+      <div style="position:relative;overflow:hidden;border-radius:18px">
+        <image-slot id="svc-detail-1" shape="rounded" radius="18" src="images/svc-detail-1.webp" placeholder="Photo: one-on-one session" style="width:100%;box-sizing:border-box;aspect-ratio:4/3;transition:transform 1.2s ease" data-hover="transform:scale(1.08)"></image-slot>
+      </div>
+      <div style="display:flex;flex-direction:column;height:100%">
+        <h3 style="margin:0 0 10px;font-size:22px;color:#1e1d16">One-on-One Personal Training</h3>
+        <p style="margin:0;font-size:15.5px;line-height:1.7;color:#5b5947">A program built around your goal, your level and your schedule, with progress tracked every step of the way.</p>
+        <div style="display:flex;justify-content:flex-end;margin-top:auto;padding-top:16px">
+          <button class="learn-more-btn" data-learn="learn-more-1" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid #1e1d16;color:#1e1d16;background:none;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:11px 24px;border-radius:24px;cursor:pointer;transition:background 0.2s,color 0.2s" data-hover="background:#8b8571;color:#1e1d16">Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="detail-3" data-reveal="1" style="scroll-margin-top:110px;display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:40px;align-items:stretch;background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 12px rgba(30,29,22,0.06);transition:box-shadow 0.2s,opacity 0.8s ease,transform 0.8s ease;opacity:0;transform:translateY(24px)" data-hover="box-shadow:0 12px 32px rgba(30,29,22,0.18)">
+      <div style="position:relative;overflow:hidden;border-radius:18px">
+        <image-slot id="svc-detail-3" shape="rounded" radius="18" src="images/svc-detail-3.webp" placeholder="Photo: group training" style="width:100%;box-sizing:border-box;aspect-ratio:4/3;transition:transform 1.2s ease" data-hover="transform:scale(1.08)"></image-slot>
+      </div>
+      <div style="display:flex;flex-direction:column;height:100%">
+        <h3 style="margin:0 0 10px;font-size:22px;color:#1e1d16">BODYPUMP Group Training</h3>
+        <p style="margin:0;font-size:15.5px;line-height:1.7;color:#5b5947">Small-group sessions and guided group classes, adapted to the level of the participants.</p>
+        <div style="display:flex;justify-content:flex-end;margin-top:auto;padding-top:16px">
+          <button class="learn-more-btn" data-learn="learn-more-3" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid #1e1d16;color:#1e1d16;background:none;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:11px 24px;border-radius:24px;cursor:pointer;transition:background 0.2s,color 0.2s" data-hover="background:#8b8571;color:#1e1d16">Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="detail-4" data-reveal="1" style="scroll-margin-top:110px;display:grid;grid-template-columns:1fr minmax(220px,40%);gap:40px;align-items:stretch;background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 12px rgba(30,29,22,0.06);transition:box-shadow 0.2s,opacity 0.8s ease,transform 0.8s ease;opacity:0;transform:translateY(24px)" data-hover="box-shadow:0 12px 32px rgba(30,29,22,0.18)">
+      <div style="display:flex;flex-direction:column;height:100%">
+        <h3 style="margin:0 0 10px;font-size:22px;color:#1e1d16">Pre and Post Natal Fitness</h3>
+        <p style="margin:0;font-size:15.5px;line-height:1.7;color:#5b5947">Safe, guided training adapted to each stage of pregnancy and postpartum recovery.</p>
+        <div style="display:flex;justify-content:flex-start;margin-top:auto;padding-top:16px">
+          <button class="learn-more-btn" data-learn="learn-more-4" style="display:inline-flex;align-items:center;justify-content:center;border:1px solid #1e1d16;color:#1e1d16;background:none;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:11px 24px;border-radius:24px;cursor:pointer;transition:background 0.2s,color 0.2s" data-hover="background:#8b8571;color:#1e1d16">Learn more</button>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border-radius:18px">
+        <image-slot id="svc-detail-4" shape="rounded" radius="18" src="images/prenatal-fitness.jpg" placeholder="Photo: pre/post natal fitness" style="width:100%;box-sizing:border-box;aspect-ratio:4/3;transition:transform 1.2s ease" data-hover="transform:scale(1.08)"></image-slot>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background:#1e1d16;color:#c9c7ba;padding:56px 56px 32px">
+    <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.12)">
+      <a href="index.html" style="display:flex;color:inherit;text-decoration:none"><span style="display:flex;align-items:center;gap:14px"><img src="images/logo-mark-light.png" alt="" style="height:26px;width:auto;display:block"><span style="display:flex;flex-direction:column;gap:4px;line-height:1"><span style="font-family:'Playfair Display',serif;font-size:24px;color:#f4f2ec;letter-spacing:0.3px;white-space:nowrap">Sanja Milanović</span><span style="font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.38em;color:#c9c7ba;text-transform:uppercase">Fitness</span></span></span></a>
+      <nav style="display:flex;gap:28px;flex-wrap:wrap">
+        <a href="index.html#about" style="font-size:14px;color:#c9c7ba" data-hover="color:#f4f2ec">About me</a>
+        <a href="services.html" style="font-size:14px;color:#c9c7ba" data-hover="color:#f4f2ec">Services</a>
+        <a href="index.html#faq" style="font-size:14px;color:#c9c7ba" data-hover="color:#f4f2ec">Questions</a>
+        <a href="index.html#zakazi" style="font-size:14px;color:#c9c7ba" data-hover="color:#f4f2ec">Book</a>
+      </nav>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding-top:24px;font-size:13px;color:#8b8975;text-align:center">© 2026 Sanja. All rights reserved.</div>
+  </footer>
+</div>
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(10,10,8,0.92);z-index:9999;align-items:center;justify-content:center;padding:40px;cursor:zoom-out">
+  <img id="lightbox-img" alt="" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5)">
+</div>
+<div id="learn-more-overlay" style="display:none;position:fixed;inset:0;background:rgba(20,19,15,0.55);z-index:9998;align-items:center;justify-content:center;padding:24px">
+  <div id="learn-more-1" style="display:none;background:#f4f2ec;max-width:560px;width:100%;max-height:80vh;overflow-y:auto;border-radius:20px;padding:40px;position:relative;opacity:0;transition:opacity 0.5s ease">
+    <button class="learn-more-close" style="position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:#f4f2ec;border:none;color:#1e1d16;display:flex;align-items:center;justify-content:center;cursor:pointer">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg>
+    </button>
+    <h3 style="margin:0 0 16px;font-family:'Playfair Display',serif;font-style:italic;font-size:26px;color:#1e1d16">Training designed around you</h3>
+    <p style="margin:0 0 14px;font-size:15px;line-height:1.7;color:#3f3d33">In one-on-one training the whole session is about you: your goal, your fitness level and your pace. There's no one-size-fits-all program. Everything we do is chosen for what your body needs right now.</p>
+    <p style="margin:0 0 14px;font-size:15px;line-height:1.7;color:#3f3d33">We start with a physical assessment and a conversation about what you want to achieve. It might be losing weight, toning up, getting stronger or simply feeling better in your body. From there, I design a safe, science-based training program built around your needs.</p>
+    <p style="margin:0;font-size:15px;line-height:1.7;color:#3f3d33">During our sessions I guide you through every exercise and help you with technique, so you train correctly and with confidence. I track your progress along the way and adjust your program as you improve. When you reach a goal, we set the next one.</p>
+  
+    <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(30,29,22,0.12);display:flex;justify-content:flex-end">
+      <a href="index.html#zakazi" style="display:inline-flex;align-items:center;justify-content:center;background:#8b8571;color:#1e1d16;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:12px 28px;border-radius:24px;transition:background 0.2s" data-hover="background:#726d5b">Book</a>
+    </div>
+  </div>
+  <div id="learn-more-3" style="display:none;background:#f4f2ec;max-width:560px;width:100%;max-height:80vh;overflow-y:auto;border-radius:20px;padding:40px;position:relative;opacity:0;transition:opacity 0.5s ease">
+    <button class="learn-more-close" style="position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:#f4f2ec;border:none;color:#1e1d16;display:flex;align-items:center;justify-content:center;cursor:pointer">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg>
+    </button>
+    <h3 style="margin:0 0 16px;font-family:'Playfair Display',serif;font-style:italic;font-size:26px;color:#1e1d16">BODYPUMP Group Training</h3>
+    <p style="margin:0 0 14px;font-size:15px;line-height:1.7;color:#3f3d33">BODYPUMP is a Les Mills group workout that uses a barbell and weights, set to music. You work through all the major muscle groups one track at a time, using light to moderate weights and lots of repetitions. You build strength and endurance, and the energy of the group keeps you going all the way to the last track.</p>
+    <p style="margin:0 0 14px;font-size:15px;line-height:1.7;color:#3f3d33">I'm a certified Les Mills BODYPUMP instructor, Level 2. That means I've been trained and assessed against Les Mills' international standards, so every class is structured, safe and led with attention to technique.</p>
+    <p style="margin:0;font-size:15px;line-height:1.7;color:#3f3d33">In class I show you each movement, give clear cues and help you pick the right weight for your level. You set your own load, so beginners and experienced participants can train side by side. You'll get stronger and more confident with every class.</p>
+  
+    <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(30,29,22,0.12);display:flex;justify-content:flex-end">
+      <a href="index.html#zakazi" style="display:inline-flex;align-items:center;justify-content:center;background:#8b8571;color:#1e1d16;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:12px 28px;border-radius:24px;transition:background 0.2s" data-hover="background:#726d5b">Book</a>
+    </div>
+  </div>
+  <div id="learn-more-4" style="display:none;background:#f4f2ec;max-width:560px;width:100%;max-height:80vh;overflow-y:auto;border-radius:20px;padding:40px;position:relative;opacity:0;transition:opacity 0.5s ease">
+    <button class="learn-more-close" style="position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;background:#f4f2ec;border:none;color:#1e1d16;display:flex;align-items:center;justify-content:center;cursor:pointer">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg>
+    </button>
+    <h3 style="margin:0 0 16px;font-family:'Playfair Display',serif;font-style:italic;font-size:26px;color:#1e1d16">Staying active through pregnancy, and returning to training after birth</h3>
+    <p style="margin:0 0 14px;font-size:15px;line-height:1.7;color:#3f3d33">Pregnancy and the months after giving birth bring big changes to your body. The right kind of movement can help you feel stronger, more energised and more at ease in your body. The key is to train in a way that is safe and suited to the stage you're in.</p>
+    <p style="margin:0 0 14px;font-size:15px;line-height:1.7;color:#3f3d33">I've completed Pre and Post Natal Fitness training with Inspire Fitness Academy, a program recognised by REPs UAE, ACSM and ACE. With that training and more than ten years of experience working with clients, I help women stay active during pregnancy and return to training gradually after birth.</p>
+    <p style="margin:0;font-size:15px;line-height:1.7;color:#3f3d33">We start with a conversation about how you feel, where you are in your pregnancy or recovery, and what you'd like to achieve. From there I put together a program that fits your current stage and energy level. I guide you through every exercise, keep an eye on how your body responds, and adjust the plan as you progress.</p>
+  
+    <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(30,29,22,0.12);display:flex;justify-content:flex-end">
+      <a href="index.html#zakazi" style="display:inline-flex;align-items:center;justify-content:center;background:#8b8571;color:#1e1d16;font-weight:600;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;padding:12px 28px;border-radius:24px;transition:background 0.2s" data-hover="background:#726d5b">Book</a>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('[data-hover]').forEach(function(el) {
+  var rules = {};
+  el.getAttribute('data-hover').split(';').forEach(function(r) {
+    var i = r.indexOf(':'); if (i === -1) return;
+    var k = r.slice(0, i).trim(), v = r.slice(i + 1).trim(); if (k) rules[k] = v;
+  });
+  var toCamel = function(k) { return k.replace(/-([a-z])/g, function(_, c) { return c.toUpperCase(); }); };
+  var original = {};
+  Object.keys(rules).forEach(function(k) { original[k] = el.style[toCamel(k)]; });
+  el.addEventListener('mouseenter', function() { Object.keys(rules).forEach(function(k) { original[k] = el.style[toCamel(k)]; el.style[toCamel(k)] = rules[k]; }); });
+  el.addEventListener('mouseleave', function() { Object.keys(rules).forEach(function(k) { el.style[toCamel(k)] = original[k] || ''; }); });
+});
+(function() {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    if (!lightbox || !lightboxImg) return;
+    const open = (src) => { if (!src) return; lightboxImg.src = src; lightbox.style.display = 'flex'; };
+    const close = () => { lightbox.style.display = 'none'; lightboxImg.src = ''; };
+    document.querySelectorAll('.zoom-btn').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const slot = document.getElementById(btn.getAttribute('data-zoom'));
+        const img = slot && slot.shadowRoot && slot.shadowRoot.querySelector('.frame img');
+        if (img && img.src) open(img.src);
+      });
+    });
+    lightbox.addEventListener('click', close);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+    const learnOverlay = document.getElementById('learn-more-overlay');
+    const openLearnMore = (panel) => {
+      if (!panel || !learnOverlay) return;
+      learnOverlay.style.display = 'flex';
+      panel.style.display = 'block';
+      const textEls = panel.querySelectorAll('h3, p');
+      textEls.forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(8px)';
+        el.style.transition = 'opacity 0.7s ease,transform 0.7s ease';
+        el.style.transitionDelay = (0.1 + i * 0.08) + 's';
+      });
+      requestAnimationFrame(() => {
+        panel.style.opacity = '1';
+        textEls.forEach((el) => { el.style.opacity = '1'; el.style.transform = 'none'; });
+      });
+    };
+    const closeLearnMore = () => {
+      if (!learnOverlay) return;
+      learnOverlay.querySelectorAll('[id^="learn-more-"]').forEach((p) => { p.style.opacity = '0'; p.style.display = 'none'; });
+      learnOverlay.style.display = 'none';
+    };
+    document.querySelectorAll('.learn-more-btn').forEach((btn) => {
+      btn.addEventListener('click', () => openLearnMore(document.getElementById(btn.getAttribute('data-learn'))));
+    });
+    document.querySelectorAll('.learn-more-close').forEach((btn) => btn.addEventListener('click', closeLearnMore));
+    if (learnOverlay) learnOverlay.addEventListener('click', (e) => { if (e.target === learnOverlay) closeLearnMore(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLearnMore(); });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'none';
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
+
+    const hashTarget = location.hash && document.getElementById(location.hash.slice(1));
+    if (hashTarget) {
+      const go = () => window.scrollTo({ top: hashTarget.getBoundingClientRect().top + window.scrollY - 110, behavior: 'auto' });
+      go(); setTimeout(go, 300); setTimeout(go, 800);
+    }
+    const parts = document.querySelectorAll('#list > [id^="detail-"]');
+    const po = new IntersectionObserver((es) => es.forEach((e) => {
+      if (!e.isIntersecting) return;
+      [...e.target.children].forEach((c) => { c.style.opacity = '1'; c.style.transform = 'none'; });
+      po.unobserve(e.target);
+    }), { threshold: 0.2 });
+    parts.forEach((card) => {
+      [...card.children].forEach((c, i) => {
+        const fromLeft = c.querySelector('image-slot') ? card.firstElementChild === c : i === 0;
+        c.style.opacity = '0';
+        c.style.transform = 'translateX(' + (fromLeft ? -60 : 60) + 'px)';
+        c.style.transition = 'opacity 0.8s ease ' + (0.2 + i * 0.25) + 's, transform 0.9s cubic-bezier(.2,.7,.2,1) ' + (0.2 + i * 0.25) + 's';
+      });
+      po.observe(card);
+    });
+    const motto = document.getElementById('motto');
+    if (motto) {
+      const mo = new IntersectionObserver((es) => es.forEach((e) => {
+        if (e.isIntersecting) { motto.querySelectorAll('[data-word]').forEach((el) => { el.style.opacity = '1'; el.style.transform = 'none'; }); mo.disconnect(); }
+      }), { threshold: 0.5 });
+      mo.observe(motto);
+    }
+    const overlay = document.getElementById('intro-overlay');
+    const content = document.getElementById('page-content');
+    if (overlay && content) {
+      setTimeout(() => {
+        overlay.style.opacity = '0';
+        content.style.opacity = '1';
+        setTimeout(() => { overlay.style.display = 'none'; }, 900);
+      }, 750);
+    }
+})();
+});
+</script>
+</body>
+</html>
